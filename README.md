@@ -28,12 +28,14 @@ Elle permet aux utilisateurs de créer un compte, se connecter, et gérer leurs 
 ---
 
 ## 🧪 Installation locale
-
+```bash
 cd agenda-decaho
 npm install
 npm start
+```
 
 ##📁 Structure du projet
+```text
 agenda-decaho/
 ├── public/
 │   └── index.html
@@ -44,6 +46,8 @@ agenda-decaho/
 │   └── App.css
 ├── package.json
 └── README.md
+```
+
 
 ✍️ Auteur
 Développé avec ❤️ par ** Decaho Gbegbe **
