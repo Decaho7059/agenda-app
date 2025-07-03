@@ -1,0 +1,143 @@
+/* src/App.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form input {
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.add-btn {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #27ae60;
+}
+
+.event {
+  background: #ecf0f1;
+  margin: 12px 0;
+  padding: 15px;
+  border-left: 6px solid #3498db;
+  border-radius: 8px;
+  position: relative;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.event strong {
+  color: #2c3e50;
+}
+
+.event .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e74c3c;
+  border: none;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 32px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 1000;
+}
+
+.fab:hover {
+  background-color: #2980b9;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+/* React Calendar override */
+.has-event {
+  background-color: #2ecc71 !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.react-calendar {
+  margin: 20px auto;
+  border: none;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.day-events {
+  margin-top: 20px;
+}
+
+.day-events h2 {
+  font-size: 18px;
+  color: #2c3e50;
+  text-align: center;
+}
